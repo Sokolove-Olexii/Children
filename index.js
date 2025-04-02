@@ -17,14 +17,6 @@ function canTheyBook(adultsCount, childrenCount, babiesCount) {
     (totalChild <= 8 || (totalChild === 8 && babiesCount >= 1)) &&
     (presentAdults || onlyBaby)
   );
-  //   const freeSpace =
-  //     (adultsCount + childrenCount <= 8 && adultsCount >= babiesCount * 2) ||
-  //     (adultsCount === babiesCount && adultsCount < 9);
-  //   const presentAdults =
-  //     childrenCount <= 2 * adultsCount &&
-  //     childrenCount + babiesCount <= 2 * adultsCount;
-
-  //   return freeSpace && presentAdults;
 }
 
 console.log(canTheyBook(2, 3, 1));
@@ -49,3 +41,12 @@ canTheyBook(2, 2, 3); // false - Недостатньо дорослих
 // та одного малюка;
 // малюків можна розмістити на ліжках для дорослих, тому в номері
 // може бути більше ніж один малюк (якщо виконуються інші умови).
+
+//   const freeSpace =
+//     (adultsCount + childrenCount <= 8 && adultsCount >= babiesCount * 2) ||
+//     (adultsCount === babiesCount && adultsCount < 9);
+//   const presentAdults =
+//     childrenCount <= 2 * adultsCount &&
+//     childrenCount + babiesCount <= 2 * adultsCount;
+
+//   return freeSpace && presentAdults;
